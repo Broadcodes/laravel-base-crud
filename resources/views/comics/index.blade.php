@@ -19,9 +19,8 @@
             <form action="{{ route('comics.destroy', $elementComic->id) }}" method="POST">
                 @csrf
                 @method('DELETE')
-                <input id="deleteInput" type="submit" value="Cancella">
+                <input onclick="return confirm('Vuoi davvero cancellare il fumetto?')" type="submit" value="Cancella">
             </form>
         @endforeach
     </div>
-    <script language="JavaScript" type="text/javascript" src="js/app.js"></script>
 @endsection

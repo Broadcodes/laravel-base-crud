@@ -19379,7 +19379,6 @@ module.exports = function(module) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
-__webpack_require__(/*! ./confirmDelate */ "./resources/js/confirmDelate.js");
 
 /***/ }),
 
@@ -19417,28 +19416,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
-
-/***/ }),
-
-/***/ "./resources/js/confirmDelate.js":
-/*!***************************************!*\
-  !*** ./resources/js/confirmDelate.js ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var delateInput = document.getElementById('deleteInput');
-// let delateInput = document.querySelector('.deleteInput');
-
-// delateInput.style.padding="20px";
-
-delateInput.addEventListener('click', function () {
-  if (!confirm('Vuoi davvero cancellare il fumetto?')) {
-    delateInput.type = "button";
-  } else {
-    delateInput.type = "submit";
-  }
-});
 
 /***/ }),
 
