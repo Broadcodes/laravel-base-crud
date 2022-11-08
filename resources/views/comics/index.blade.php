@@ -19,7 +19,7 @@
             <form action="{{ route('comics.destroy', $elementComic->id) }}" method="POST">
                 @csrf
                 @method('DELETE')
-                <input onclick="confirmDelete()" id="deleteInput" type="submit" value="Cancella">
+                <input id="deleteInput" type="submit" value="Cancella">
             </form>
         @endforeach
     </div>
