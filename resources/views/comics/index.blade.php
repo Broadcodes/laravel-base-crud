@@ -6,6 +6,6 @@
 
 @section('container')
     @foreach ($comics as $elementComic)
-        <a href=""><h3>{{$elementComic->title}}</h3></a>
+        <a href="{{ route('comics.show', $elementComic->id) }}"><h3>{{$elementComic->title}}</h3></a>
     @endforeach
 @endsection
