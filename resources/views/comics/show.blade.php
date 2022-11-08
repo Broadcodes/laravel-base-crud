@@ -5,28 +5,17 @@
 @endsection
 
 @section('container')
-    <table>
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Thumb</th>
-                <th>Price</th>
-                <th>Series</th>
-                <th>Sale_date</th>
-                <th>Type</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>{{ $comic->title }}</td>
-                <td>{{ $comic->description }}</td>
-                <td><img src="{{ $comic->thumb }}" alt="{{ $comic->title }}"></td>
-                <td>€{{ $comic->price }}</td>
-                <td>{{ $comic->series }}</td>
-                <td>{{ $comic->sale_date }}</td>
-                <td>{{ $comic->type }}</td>
-            </tr>
-        </tbody>
-    </table>
+
+<img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
+
+<div>
+    <h2>Title: {{ $comic->title }}</h2>
+    <h3>Price: €{{ $comic->price }}</h3>
+    <h3>Series: {{ $comic->series }}</h3>
+    <h3>Sale_date: {{ $comic->sale_date }}</h3>
+    <h3>Type: {{ $comic->type }}</h3>
+    <p>Description: {{ $comic->description }}</p>
+</div>
+
+<a href="{{ route('comics.index') }}">Torna Indietro</a>
 @endsection
