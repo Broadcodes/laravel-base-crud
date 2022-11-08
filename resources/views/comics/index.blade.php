@@ -16,10 +16,10 @@
             <a href="{{ route('comics.show', $elementComic->id) }}">
                 <h3>{{ $elementComic->title }}</h3>
             </a>
-            <form action="{{ route('comics.destroy', $elementComic->id)}}" method="post">
+            <form action="{{ route('comics.destroy', $elementComic->id)}}" method="POST">
                 @csrf
                 @method('DELETE')
-                <input type="button" value="Cancella">
+                <input type="submit" value="Cancella">
             </form>
         @endforeach
     </div>
