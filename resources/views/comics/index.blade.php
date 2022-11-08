@@ -6,7 +6,7 @@
 
 @section('container')
     <div>
-        <a href="">
+        <a href="{{ route('comics.create') }}">
             <h2>Aggiungi nuovo fumetto</h2>
         </a>
     </div>
