@@ -1,0 +1,25 @@
+.add{
+    padding: 30px;
+}
+
+.containerCards{
+    padding: 0 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    .card{
+        width: calc(100% / 5);
+        text-align: center;
+        margin: 20px auto;
+
+        h3{
+            margin: 10px;
+        }
+
+        input{
+            padding: 5px 10px;
+        }
+    }
+}
