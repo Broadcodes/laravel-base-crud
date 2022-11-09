@@ -17,5 +17,6 @@
     <p>Description: {{ $comic->description }}</p>
 </div>
 
+<a href="{{ route('comics.edit', $comic->id) }}">Modifica</a>
 <a href="{{ route('comics.index') }}">Torna Indietro</a>
 @endsection
