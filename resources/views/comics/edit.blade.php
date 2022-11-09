@@ -27,7 +27,7 @@
         </div>
         <div>
             <label for="price">Price</label>
-            <input type="number" step=".01" name="" id="price" value="{{ $comic->price }}">
+            <input type="text" name="price" id="price" value="{{ $comic->price }}">
         </div>
         <div>
             <label for="thumb">Thumb</label>
