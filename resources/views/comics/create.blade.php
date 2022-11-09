@@ -25,7 +25,7 @@
         </div>
         <div>
             <label for="price">Price</label>
-            <input type="text" name="price" id="price">
+            <input type="number" step=".01" name="price" id="price">
         </div>
         <div>
             <label for="thumb">Thumb</label>
