@@ -8,6 +8,15 @@ body {
   font-family: sans-serif;
 }
 
+.is-validator {
+  border: 1px solid red;
+}
+
+form h5 {
+  margin: 10px;
+  color: red;
+}
+
 .add {
   padding: 30px;
 }
